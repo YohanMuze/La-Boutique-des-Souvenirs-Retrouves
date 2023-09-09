@@ -1,0 +1,13 @@
+.nav {
+    @include flex(row);
+    &__ul {
+        @include flex(row);
+        gap: 2rem;
+        &__li {
+            font-size: 1.5rem;
+        }
+        &__li:hover {
+            cursor: pointer;
+        }
+    }
+}

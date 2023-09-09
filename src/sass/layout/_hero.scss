@@ -1,0 +1,11 @@
+.hero {
+    position: relative;
+    margin: 3rem 0;
+    &__figure {
+        height: 40rem;
+        &__img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

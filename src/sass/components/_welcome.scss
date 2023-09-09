@@ -1,0 +1,11 @@
+.welcome {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    @include flex;
+    margin: 5rem;
+    color: white;
+    &__txt {
+        font-size: 3rem;
+    }
+}

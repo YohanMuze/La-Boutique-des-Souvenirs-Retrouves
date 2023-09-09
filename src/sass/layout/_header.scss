@@ -1,0 +1,7 @@
+.header {
+    margin: 2rem;
+    @include flex(row, space-between);
+    &__logo {
+        width: 35%;
+    }
+}

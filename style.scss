@@ -1,0 +1,17 @@
+@import "./src/sass/utils/mixins";
+
+@import "./src/sass/base/base";
+@import "./src/sass/base/typography";
+
+
+@import "./src/sass/components/nav";
+@import "./src/sass/components/welcome";
+@import "./src/sass/components/filters";
+@import "./src/sass/components/gallery";
+
+
+@import "./src/sass/layout/header";
+@import "./src/sass/layout/hero";
+@import "./src/sass/layout/apropos";
+@import "./src/sass/layout/gallery-layout";
+@import "./src/sass/layout/footer";

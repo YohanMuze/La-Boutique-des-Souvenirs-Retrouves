@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Boutique des Souvenirs Retrouvés</title>
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="./public/logo.png">
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__ul__li"><a href="#apropos">À propos</a></li>
+                <li class="nav__ul__li"><a>Gallerie</a></li>
+                <li class="nav__ul__li"><a>Contact</a></li>
+                <li class="nav__ul__li"><a>Liens</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <aside class="hero">
+            <div class="welcome">
+                <h1 class="welcome__txt">Bienvenue dans ma boutique de peintures, scultptures, bijoux, babioles et
+                    autres
+                    curiosités</h1>
+            </div>
+            <figure class="hero__figure">
+                <img class="hero__figure__img" src="./src/assets/images/hero_crop.jpg">
+            </figure>
+        </aside>
+        <article id="apropos" class="apropos">
+            <figure class="apropos__figure">
+                <img src="./src/assets/images/terry.jpg">
+            </figure>
+            <div class="apropos__content">
+                <h2>À propos</h2>
+                <p>Terry O'Meher ? Le Dormeur du Vol ? L'homme aux multiples patronymes vous accueil dans l'antre de ses
+                    mutiples talents. Auteur, peintre, poète, photographe mais aussi sculpteur et bricoleur à ses heures
+                    perdues. Découvrez, explorez, laissez-vous surprendre par son univers tentaculaire, touchant et
+                    authentique.</p>
+            </div>
+        </article>
+        <aside class="gallery-layout">
+            <h2>Mes créations</h2>
+            <div class="filters">
+                <button id="btn-all" class="filter filter--active" name="filterAll" type="button">Tout</button>
+                <button id="btn-bracelets" class="filter" name="filterBracelets" type="button">Bracelets</button>
+                <button id="btn-cahiers" class="filter" name="filterCahiers" type="button">Cahiers</button>
+                <button id="btn-colliers" class="filter" name="filterColliers" type="button">Colliers</button>
+                <button id="btn-decorations" class="filter" name="filterDecorations" type="button">Décorations</button>
+                <button id="btn-dessins" class="filter" name="filterdessins" type="button">Dessins</button>
+                <button id="btn-livres" class="filter" name="filterLivres" type="button">Livres</button>
+                <button id="btn-pendentifs" class="filter" name="filterPendentifs" type="button">Pendentifs</button>
+                <button id="btn-pendules" class="filter" name="filterPendules" type="button">Pendules</button>
+                <button id="btn-pierres" class="filter" name="filterPierres" type="button">Pierres</button>
+                <button id="btn-pochettes" class="filter" name="filterPochettes" type="button">Pochettes
+                    zippées</button>
+                <button id="btn-porte-parfum" class="filter" name="filterPorteParfum" type="button">Porte
+                    parfum</button>
+                <button id="btn-tableaux" class="filter" name="filterTableaux" type="button">Tableaux</button>
+                <button id="btn-tote-bags" class="filter" name="filterToteBags" type="button">Tote Bags</button>
+            </div>
+            <div class="gallery"></div>
+        </aside>
+    </main>
+    <footer class="footer">
+        <div></div>
+    </footer>
+</body>
+
+</html>
