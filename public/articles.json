@@ -1,5 +1,6 @@
 [
     {
+        "id": "1", 
         "title": "Crane méxicain",
         "cover": "./src/assets/images/articles/crane-1.jpg",
         "description": "Un joli petit crane fait main rappellant la célébration d'el dia de los muertos au Mexique. Terry aura plus de trucs à dire",
@@ -7,7 +8,8 @@
         "categoryId": 4,
         "price": "15"
     },
-    {
+    {   
+        "id": "2",
         "title": "Crane méxicain 2",
         "cover": "./src/assets/images/articles/crane-2.jpg",
         "description": "Un joli petit crane fait main rappellant la célébration d'el dia de los muertos au Mexique. Terry aura plus de trucs à dire",
@@ -15,8 +17,9 @@
         "categoryId": 4,
         "price": "15"
     },
-    {
-        "title": "Pendentif Chtulu",
+    {   
+        "id": "3",
+        "title": "Pendentif Cthulhu",
         "cover": "./src/assets/images/articles/pendentif-chtulu.jpg",
         "description": "Un pendentif super stylé avec des vibes d'univers Lovecraftien. Terry aura plus de trucs à dire",
         "category": "pendentifs",
@@ -24,6 +27,7 @@
         "price": "15"
     },
     {
+        "id": "4",
         "title": "Bracelet Viking",
         "cover": "./src/assets/images/articles/bracelet-viking_resized.jpg",
         "description": "Un très beau bracelet inspiration viking",
@@ -31,7 +35,8 @@
         "categoryId": 1,
         "price": "15"
     },
-    {
+    {   
+        "id": "5",
         "title": "Cahier Sir Andrew Khanis",
         "cover": "./src/assets/images/articles/cahier-sir-andrew-khanis.jpg",
         "description": "Un cahier pour le moins... Surprenant  ?",
@@ -40,6 +45,7 @@
         "price": "15"
     },
     {
+        "id": "6",
         "title": "Calling Cthulhu - Anthologies Tome III",
         "cover": "./src/assets/images/articles/livre-calling-cthulhu-antho-t3_resized.jpg",
         "description": "Huit auteurs (dont votre serviteurs) pour des histoires terrifiantes venuent du fond des profondeurs de l'horreur. Edition L'Ivre-Book. Exemplaire dédicacé à la demande, en message privé. Ce sont les derniers, ils ne seront apparement pas réédité.",
@@ -48,6 +54,7 @@
         "price": "15"
     },
     {
+        "id": "7",
         "title": "Pendule en Quartz",
         "cover": "./src/assets/images/articles/pendule-quartz_resized.jpg",
         "description": "Très belle couleur ce pendule !",
@@ -56,6 +63,7 @@
         "price": "15"
     },
     {
+        "id": "8",
         "title": "Quartz",
         "cover": "./src/assets/images/articles/pierre-quartz_resized.jpg",
         "description": "Pierres de Quartz élevées en plein air et nourries au grain.",
@@ -64,6 +72,7 @@
         "price": "15"
     },
     {
+        "id": "9",
         "title": "Les épis de la mer",
         "cover": "./src/assets/images/articles/pochette-epis_resized.jpg",
         "description": "Une belle pochette calme et relaxante, parfaite pour aller à la plage, pour les promenades à bicyclette avec Paulette, ou pour les croisières en bateau-mouche (ou en bateau-louche, râteau-mouche, comme vous voulez..)",
@@ -72,6 +81,7 @@
         "price": "15"
     },
     {
+        "id": "10",
         "title": "L'arbre mort",
         "cover": "./src/assets/images/articles/tote-bag-arbre-mort.jpg",
         "description": "Un tote bag qui me rapelle les matins d'hiver, éclairé par la froideur de la Lune.",

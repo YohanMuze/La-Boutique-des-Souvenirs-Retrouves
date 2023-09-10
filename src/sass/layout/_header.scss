@@ -1,7 +1,12 @@
 .header {
     margin: 2rem;
     @include flex(row, space-between);
-    &__logo {
+    &__logo-link {
+        display: block;
+        height: 100%;
         width: 35%;
+    }
+    &__logo {
+        width: 100%;
     }
 }

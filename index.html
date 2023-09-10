@@ -11,7 +11,8 @@
 
 <body>
     <header class="header">
-        <img class="header__logo" src="./public/logo.png">
+        <a class="header__logo-link" href="index.html"><img alt="Logo de La Boutique des Souvenirs Retrouvés"
+                class="header__logo" src="./public/logo.png"></a>
         <nav class="nav">
             <ul class="nav__ul">
                 <li class="nav__ul__li"><a href="#apropos">À propos</a></li>
@@ -65,6 +66,9 @@
                 <button id="btn-tableaux" class="filter" name="filterTableaux" type="button">Tableaux</button>
                 <button id="btn-tote-bags" class="filter" name="filterToteBags" type="button">Tote Bags</button>
             </div>
+            <dialog id="modal-article" class="modal">
+                <div class="modal-wrapper"></div>
+            </dialog>
             <div class="gallery"></div>
         </aside>
     </main>

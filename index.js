@@ -1,4 +1,4 @@
-var galleryFull = new Array();
+var galleryFull, galleryActual = new Array();
 
 const buttonAll = document.querySelector("#btn-all");
 const buttonBracelets = document.querySelector("#btn-bracelets");
@@ -16,6 +16,7 @@ const buttonTableaux = document.querySelector("#btn-tableaux");
 const buttonToteBags = document.querySelector("#btn-tote-bags");
 const filters = document.querySelectorAll(".filter");
 
+const modal = document.querySelector("#modal-article");
 
 /********* Gallery display functions : **********/
 function clearGallery(selector) {
@@ -37,20 +38,38 @@ function resetClick(filterId) {
 
 function filterByCat(arr, id) {
     var result = arr.filter(function (article) {
-        console.log(arr, id)
         return article.categoryId === id;
     });
     return result;
 }
 
+function filterById(arr, check) {
+    var result = arr.filter(function (article) {
+        return article.id === check;
+    });
+    return result;
+}
+
+
 function fillGallery(arr) {
     for (let i = 0; i < arr.length; i++) {
         document.querySelector(".gallery")
-            .innerHTML += `<figure>
-                    <img src="${arr[i].cover}" alt="${arr[i].title}">
-                    <figcaption>${arr[i].title}</figcaption>
+            .innerHTML += `    
+                <figure>
+                    <a class="modal-link" href="#modal-article">
+                        <img id="${arr[i].id}" src="${arr[i].cover}" alt="${arr[i].title}">
+                        <figcaption>${arr[i].title}</figcaption>
+                    </a>
                 </figure>`;
     }
+    let modalLink = document.querySelectorAll(".modal-link");
+    console.log(modalLink);
+    modalLink.forEach(a => {
+        a.addEventListener("click", (e) => {
+            openModal(e);
+            console.log(modal);
+        })
+    });
 }
 
 function displayGallery() {
@@ -59,19 +78,21 @@ function displayGallery() {
         .then(data => data.json())
         .then(gallery => {
             galleryFull = gallery;
-            console.log(galleryFull);
+            galleryActual = galleryFull
             fillGallery(gallery);
 
             //"All" button :
             buttonAll.addEventListener("click", () => {
                 resetClick(0);
-                fillGallery(gallery);
+                galleryActual = galleryFull;
+                fillGallery(galleryFull);
             });
 
             //"Bracelets" button :
             buttonBracelets.addEventListener("click", () => {
                 resetClick(1);
                 const filtered = filterByCat(galleryFull, 1);
+                galleryActual = filtered;
                 fillGallery(filtered);
             });
 
@@ -79,6 +100,7 @@ function displayGallery() {
             buttonCahiers.addEventListener("click", () => {
                 resetClick(2);
                 const filtered = filterByCat(galleryFull, 2);
+                galleryActual = filtered;
                 fillGallery(filtered);
             });
 
@@ -86,6 +108,7 @@ function displayGallery() {
             buttonColliers.addEventListener("click", () => {
                 resetClick(3);
                 const filtered = filterByCat(galleryFull, 3);
+                galleryActual = filtered;
                 fillGallery(filtered);
             });
 
@@ -93,7 +116,7 @@ function displayGallery() {
             buttonDecorations.addEventListener("click", () => {
                 resetClick(4);
                 const filtered = filterByCat(galleryFull, 4);
-                console.log(filtered)
+                galleryActual = filtered;
                 fillGallery(filtered);
             });
 
@@ -101,6 +124,7 @@ function displayGallery() {
             buttonDessins.addEventListener("click", () => {
                 resetClick(5);
                 const filtered = filterByCat(galleryFull, 5);
+                galleryActual = filtered;
                 fillGallery(filtered);
             });
             
@@ -108,6 +132,7 @@ function displayGallery() {
             buttonLivres.addEventListener("click", () => {
                 resetClick(6);
                 const filtered = filterByCat(galleryFull, 6);
+                galleryActual = filtered;
                 fillGallery(filtered);
             });
 
@@ -115,6 +140,7 @@ function displayGallery() {
             buttonPendentifs.addEventListener("click", () => {
                 resetClick(7);
                 const filtered = filterByCat(galleryFull, 7);
+                galleryActual = filtered;
                 fillGallery(filtered);
             });
 
@@ -122,6 +148,7 @@ function displayGallery() {
             buttonPendules.addEventListener("click", () => {
                 resetClick(8);
                 const filtered = filterByCat(galleryFull, 8);
+                galleryActual = filtered;
                 fillGallery(filtered);
             });
 
@@ -129,6 +156,7 @@ function displayGallery() {
             buttonPierres.addEventListener("click", () => {
                 resetClick(9);
                 const filtered = filterByCat(galleryFull, 9);
+                galleryActual = filtered;
                 fillGallery(filtered);
             });
 
@@ -136,6 +164,7 @@ function displayGallery() {
             buttonPochettes.addEventListener("click", () => {
                 resetClick(10);
                 const filtered = filterByCat(galleryFull, 10);
+                galleryActual = filtered;
                 fillGallery(filtered);
             });
 
@@ -143,6 +172,7 @@ function displayGallery() {
             buttonPorteParfum.addEventListener("click", () => {
                 resetClick(11);
                 const filtered = filterByCat(galleryFull, 11);
+                galleryActual = filtered;
                 fillGallery(filtered);
             });
 
@@ -150,6 +180,7 @@ function displayGallery() {
             buttonTableaux.addEventListener("click", () => {
                 resetClick(12);
                 const filtered = filterByCat(galleryFull, 12);
+                galleryActual = filtered;
                 fillGallery(filtered);
             });
 
@@ -157,10 +188,48 @@ function displayGallery() {
             buttonToteBags.addEventListener("click", () => {
                 resetClick(13);
                 const filtered = filterByCat(galleryFull, 13);
+                galleryActual = filtered;
                 fillGallery(filtered);
             });
 
         });
+}
+
+/********* Modal's functions *********/
+
+function openModal(e) {
+    e.preventDefault();
+    modal.showModal();
+    modal.style.display = "flex";
+    let target = e.target.id;
+    let article = filterById(galleryActual, target);
+    console.log(article);
+    fillModal(article, target);
+}
+
+function closeModal() {
+    modal.close();
+    modal.style.display = "none";
+}
+
+function fillModal(article) {
+        document.querySelector(".modal-wrapper")
+            .innerHTML = 
+    `
+    <div class="modal-wrapper__header"><img class="modal-wrapper__header__img" src="./public/close_cross.png"></div>
+    <div class="modal-wrapper__layout">    
+        <figure class="modal-wrapper__fig">
+            <img class="modal-wrapper__fig__img" src="${article[0].cover}">
+            <figcaption class="modal-wrapper__fig__caption">${article[0].title}</figcaption>
+        </figure>
+        <div class="modal-wrapper__info">
+            <h2 class="modal-wrapper__info__h">${article[0].title}</h2>
+            <p class="modal-wrapper__info__p">${article[0].description}</p>
+        </div>
+    </div>
+    `;
+    document.querySelector(".modal-wrapper__header__img")
+    .addEventListener("click", (closeModal));
 }
 
 displayGallery();
