@@ -224,7 +224,14 @@ function fillModal(article) {
         </figure>
         <div class="modal-wrapper__info">
             <h2 class="modal-wrapper__info__h">${article[0].title}</h2>
-            <p class="modal-wrapper__info__p">${article[0].description}</p>
+            <div class="modal-wrapper__info__div-price">
+                <h3 class="modal-wrapper__info__div-price__title">Prix :</h3>
+                <p class="modal-wrapper__info__div-price__price">${article[0].price}</p>
+            </div>
+            <div class="modal-wrapper__info__details">
+                <h3 class="modal-wrapper__info__details__title">Détails :</h3>    
+                <p class="modal-wrapper__info__details__p">${article[0].description}</p>
+            </div>
         </div>
     </div>
     `;

@@ -1,0 +1,10 @@
+.contact {
+    @include flex;
+    gap: 2rem;
+    &__title {
+        font-size: larger;
+    }
+    &__content {
+        @include flex(row, normal, normal);
+    }
+}

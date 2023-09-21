@@ -140,9 +140,34 @@ a, li, button {
   gap: 1.5rem;
 }
 .modal-wrapper__info__h {
+  font-size: 2rem;
+  margin-bottom: 1.4rem;
+  align-self: center;
+}
+.modal-wrapper__info__div-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-wrapper__info__div-price__title {
   font-size: 1.5rem;
 }
-.modal-wrapper__info__p {
+.modal-wrapper__info__div-price__price {
+  font-size: 1.5rem;
+  padding-top: 0.2rem;
+}
+.modal-wrapper__info__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: normal;
+  gap: 1rem;
+}
+.modal-wrapper__info__details__title {
+  font-size: 1.5rem;
+}
+.modal-wrapper__info__details__p {
   font-size: 1rem;
 }
 
@@ -158,6 +183,42 @@ a, li, button {
 .gallery img {
   height: 500px;
   width: 100%;
+}
+
+.info-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+  width: 50%;
+  padding: 2rem;
+}
+.info-contact__title {
+  margin-bottom: 2rem;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 2rem;
+}
+.form-contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.form-contact__form__label {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+  gap: 0.5rem;
 }
 
 .header {
@@ -237,7 +298,24 @@ a, li, button {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin: 5rem 2rem;
+  margin: 8rem 2rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.contact__title {
+  font-size: larger;
+}
+.contact__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: normal;
 }
 
 .footer {

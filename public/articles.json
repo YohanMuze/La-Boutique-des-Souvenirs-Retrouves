@@ -6,7 +6,7 @@
         "description": "Un joli petit crane fait main rappellant la célébration d'el dia de los muertos au Mexique. Terry aura plus de trucs à dire",
         "category": "decorations",
         "categoryId": 4,
-        "price": "15"
+        "price": "15€"
     },
     {   
         "id": "2",
@@ -15,7 +15,7 @@
         "description": "Un joli petit crane fait main rappellant la célébration d'el dia de los muertos au Mexique. Terry aura plus de trucs à dire",
         "category": "decorations",
         "categoryId": 4,
-        "price": "15"
+        "price": "15€"
     },
     {   
         "id": "3",
@@ -24,7 +24,7 @@
         "description": "Un pendentif super stylé avec des vibes d'univers Lovecraftien. Terry aura plus de trucs à dire",
         "category": "pendentifs",
         "categoryId": 7,
-        "price": "15"
+        "price": "15€"
     },
     {
         "id": "4",
@@ -33,7 +33,7 @@
         "description": "Un très beau bracelet inspiration viking",
         "category": "bracelets",
         "categoryId": 1,
-        "price": "15"
+        "price": "15€"
     },
     {   
         "id": "5",
@@ -42,7 +42,7 @@
         "description": "Un cahier pour le moins... Surprenant  ?",
         "category": "pendentifs",
         "categoryId": 2,
-        "price": "15"
+        "price": "15€"
     },
     {
         "id": "6",
@@ -51,7 +51,7 @@
         "description": "Huit auteurs (dont votre serviteurs) pour des histoires terrifiantes venuent du fond des profondeurs de l'horreur. Edition L'Ivre-Book. Exemplaire dédicacé à la demande, en message privé. Ce sont les derniers, ils ne seront apparement pas réédité.",
         "category": "livres",
         "categoryId": 6,
-        "price": "15"
+        "price": "15€"
     },
     {
         "id": "7",
@@ -60,7 +60,7 @@
         "description": "Très belle couleur ce pendule !",
         "category": "pendules",
         "categoryId": 8,
-        "price": "15"
+        "price": "15€"
     },
     {
         "id": "8",
@@ -69,7 +69,7 @@
         "description": "Pierres de Quartz élevées en plein air et nourries au grain.",
         "category": "pierres",
         "categoryId": 9,
-        "price": "15"
+        "price": "15€"
     },
     {
         "id": "9",
@@ -78,7 +78,7 @@
         "description": "Une belle pochette calme et relaxante, parfaite pour aller à la plage, pour les promenades à bicyclette avec Paulette, ou pour les croisières en bateau-mouche (ou en bateau-louche, râteau-mouche, comme vous voulez..)",
         "category": "pochettes",
         "categoryId": 10,
-        "price": "15"
+        "price": "15€"
     },
     {
         "id": "10",
@@ -87,6 +87,6 @@
         "description": "Un tote bag qui me rapelle les matins d'hiver, éclairé par la froideur de la Lune.",
         "category": "totebags",
         "categoryId": 13,
-        "price": "15"
+        "price": "15€"
     }
 ]

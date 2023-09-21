@@ -1,0 +1,14 @@
+.form-contact {
+    @include flex;
+    width: 50%;
+    padding: 2rem;
+    &__form {
+        @include flex(column, normal, normal);
+        margin-top: 2rem;
+        gap: 1rem;
+        &__label {
+            @include flex(column, normal, normal);
+            gap: 0.5rem;
+        }
+    }
+}
