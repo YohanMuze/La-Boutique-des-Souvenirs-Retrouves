@@ -189,36 +189,55 @@ a, li, button {
   display: flex;
   flex-direction: column;
   justify-content: normal;
-  align-items: normal;
+  align-items: center;
   width: 50%;
+  margin: 2rem;
   padding: 2rem;
+  background-color: #F8ECE2;
+  border-radius: 2rem;
 }
 .info-contact__title {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+.info-contact__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+  gap: 1rem;
 }
 
-.form-contact {
+.liens-contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: normal;
   width: 50%;
+  margin: 2rem;
   padding: 2rem;
+  padding-bottom: 4rem;
+  background-color: #EED6C4;
+  border-radius: 2rem;
 }
-.form-contact__form {
+.liens-contact__ul {
   display: flex;
   flex-direction: column;
   justify-content: normal;
   align-items: normal;
-  margin-top: 2rem;
-  gap: 1rem;
+  margin-top: 3rem;
+  gap: 2rem;
+  padding: 0;
 }
-.form-contact__form__label {
+.liens-contact__ul__li a {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: normal;
-  align-items: normal;
+  align-items: center;
   gap: 0.5rem;
+  margin-left: -0.5rem;
+}
+.liens-contact h3 {
+  align-self: center;
 }
 
 .header {
@@ -306,7 +325,7 @@ a, li, button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .contact__title {
   font-size: larger;

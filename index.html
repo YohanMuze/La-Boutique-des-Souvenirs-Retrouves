@@ -17,7 +17,7 @@
             <ul class="nav__ul">
                 <li class="nav__ul__li"><a href="#apropos">À propos</a></li>
                 <li class="nav__ul__li"><a href="#gallery">Gallerie</a></li>
-                <li class="nav__ul__li"><a>Contact</a></li>
+                <li class="nav__ul__li"><a href="#contact">Contact</a></li>
                 <li class="nav__ul__li"><a>Liens</a></li>
             </ul>
         </nav>
@@ -72,41 +72,34 @@
             <div class="gallery"></div>
         </aside>
         <aside class="contact">
-            <h2 class="contact__title">Me contacter :</h2>
+            <h2 id="contact" class="contact__title">Me contacter</h2>
             <div class="contact__content">
                 <div class="info-contact">
-                    <h3 class="info-contact__title">Informations :</h3>
-                    <p>Vous pouvez me contacter pour toutes informations concernant mes créations ou pour acheter l'une
-                        de celles qui sont en vente dans la boutique.</p>
-                    <p>Pour toute commande il faut ajouter 5€ de frais de ports et d'emballage</p>
+                    <h3 class="info-contact__title">Informations</h3>
+                    <div class="info-contact__text">
+                        <p>Merci de me contacter directement via les liens ci-contre.</p>
+                        <p>Vous pouvez me contacter pour toutes informations concernant mes créations ou pour acheter
+                            l'une
+                            de celles qui sont en vente dans la boutique.</p>
+                        <p>Pour toute commande il faut ajouter 5€ de frais de ports et d'emballage</p>
+                    </div>
                 </div>
-                <div class="form-contact">
-                    <h3>Formulaire :</h3>
-                    <form class="form-contact__form" action="mailto:yoh.nbc@hotmail.fr" method="post"
-                        enctype="text/plain">
-                        <label class="form-contact__form__label" for="name">
-                            Qui êtes-vous ?
-                            <input type="text" name="name">
-                        </label>
-                        <label class="form-contact__form__label" for="object">
-                            Que souhaitez-vous ?
-                            <select name="object">
-                                <option value="">Veuillez séléctionez un sujet</option>
-                                <option value="Question">Une demande d'informations</option>
-                                <option value="Achat">Acheter un article</option>
-                                <option value="Autre">Autre</option>
-                            </select>
-                        </label>
-                        <label class="form-contact__form__label" for="details">
-                            Donnez-moi tous les détails !
-                            <input type="text" name="details">
-                        </label>
-                        <label class="form-contact__form__label" for="contact">
-                            Comment puis-je vous recontacter ?
-                            <input type="text" name="contact">
-                        </label>
-                        <input type="submit" value="Envoyer">
-                    </form>
+                <div class="liens-contact">
+                    <h3>Liens de contact</h3>
+                    <ul class="liens-contact__ul">
+                        <li class="liens-contact__ul__li">Par mail : terryomeher@gmail.com</li>
+                        <li class="liens-contact__ul__li">
+                            <a href="https://www.facebook.com/TerryOmeher/" target="_blank"><img
+                                    src="./public/icon-facebook.png">Sur Facebook : Terry
+                                O'Meher</a>
+                        </li>
+                        <li class="liens-contact__ul__li">
+                            <a href="https://www.instagram.com/ledormeurduvol/" target="_blank"><img
+                                    src="./public/icon-instagram.png">Sur Instagram : Le
+                                Dormeur du Vol</a>
+                        </li>
+                        <li class="liens-contact__ul__li">Par téléphone : ?</li>
+                    </ul>
                 </div>
             </div>
         </aside>

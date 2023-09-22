@@ -1,0 +1,23 @@
+.liens-contact {
+    @include flex(column, center, normal);
+    width: 50%;
+    margin: 2rem;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    background-color: #EED6C4;
+    border-radius: 2rem;
+    &__ul {
+        @include flex(column, normal, normal);
+        margin-top: 3rem;
+        gap: 2rem;
+        padding: 0;
+        &__li a {
+            @include flex(row, normal, center);
+            gap: 0.5rem;
+            margin-left: -0.5rem;
+        }
+    }
+    & h3 {
+        align-self: center;
+    }
+}

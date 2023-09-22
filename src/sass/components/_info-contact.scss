@@ -1,8 +1,15 @@
 .info-contact {
-    @include flex(column, normal, normal);
+    @include flex(column, normal, center);
     width: 50%;
+    margin: 2rem;
     padding: 2rem;
+    background-color: #F8ECE2;
+    border-radius: 2rem;
     &__title {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
+    }
+    &__text {
+        @include flex(column, normal, normal);
+        gap: 1rem;
     }
 }
