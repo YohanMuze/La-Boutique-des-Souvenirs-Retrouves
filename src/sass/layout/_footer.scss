@@ -1,13 +1,17 @@
 .footer {
-    @include flex(row);
+    @include flex(row, center, normal);
     height: 100%;
     width: 100%;
+    gap: 10%;
     margin-top: 3rem;
-    padding: 2rem;
+    padding: 3rem;
     background-color: black;
     &__content {
-        @include flex(row);
+        @include flex(row, space-between, normal);
         width: 90%;
+        & a, p {
+            color: white;
+        }
     }
     &__link-icon-up {
         @include flex(column, center, normal);

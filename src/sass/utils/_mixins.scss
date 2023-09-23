@@ -4,3 +4,11 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin layout-footer-component {
+    @include flex(column, normal, normal);
+    gap: 0.4rem;
+    & a {
+        font-size: 0.8rem;
+    }
+}
