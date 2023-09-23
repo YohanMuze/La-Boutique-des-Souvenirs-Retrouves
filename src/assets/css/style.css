@@ -11,6 +11,7 @@ a, li, button {
 
 * {
   font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .nav {
@@ -55,7 +56,7 @@ a, li, button {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  margin: 4rem 0rem;
+  margin: 2rem 0rem;
 }
 
 .filter {
@@ -173,16 +174,26 @@ a, li, button {
 
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1.5rem;
   grid-row-gap: 70px;
 }
-.gallery figure {
-  height: 500px;
+.gallery a {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+  border-radius: 1rem;
+  background-color: #FAFAFA;
 }
 .gallery img {
-  height: 500px;
+  height: 380px;
   width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.gallery figcaption {
+  padding: 0.5rem;
+  align-self: center;
 }
 
 .info-contact {
@@ -197,7 +208,7 @@ a, li, button {
   border-radius: 2rem;
 }
 .info-contact__title {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 .info-contact__text {
   display: flex;
@@ -214,8 +225,7 @@ a, li, button {
   align-items: normal;
   width: 50%;
   margin: 2rem;
-  padding: 2rem;
-  padding-bottom: 4rem;
+  padding: 2rem 2rem 1rem 2rem;
   background-color: #EED6C4;
   border-radius: 2rem;
 }
@@ -224,8 +234,9 @@ a, li, button {
   flex-direction: column;
   justify-content: normal;
   align-items: normal;
-  margin-top: 3rem;
-  gap: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+  gap: 1.5rem;
   padding: 0;
 }
 .liens-contact__ul__li a {
@@ -317,7 +328,14 @@ a, li, button {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin: 8rem 2rem;
+  margin: 4rem 2rem;
+  padding: 2rem 2rem 4rem;
+  background-color: #d6ae86;
+  border-radius: 1rem;
+}
+.gallery-layout__title {
+  margin-top: 1rem;
+  font-size: 2rem;
 }
 
 .contact {
@@ -338,8 +356,34 @@ a, li, button {
 }
 
 .footer {
-  height: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   width: 100%;
   margin-top: 3rem;
+  padding: 2rem;
   background-color: black;
+}
+.footer__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.footer__link-icon-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: normal;
+  height: 120px;
+  width: 100px;
+  color: white;
+  font-size: small;
+  text-align: center;
+}
+.footer__icon-up {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

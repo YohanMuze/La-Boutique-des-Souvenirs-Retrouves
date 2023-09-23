@@ -1,5 +1,12 @@
 .gallery-layout {
     @include flex;
     gap: 1rem;
-    margin: 8rem 2rem;
+    margin: 4rem 2rem;
+    padding: 2rem 2rem 4rem;
+    background-color: #d6ae86;
+    border-radius: 1rem;
+    &__title {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
 }

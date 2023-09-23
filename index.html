@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Boutique des Souvenirs Retrouvés</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/assets/css/style.css">
     <script src="index.js" defer></script>
 </head>
 
 <body>
-    <header class="header">
+    <header id="up" class="header">
         <a class="header__logo-link" href="index.html"><img alt="Logo de La Boutique des Souvenirs Retrouvés"
                 class="header__logo" src="./public/logo.png"></a>
         <nav class="nav">
@@ -18,7 +21,7 @@
                 <li class="nav__ul__li"><a href="#apropos">À propos</a></li>
                 <li class="nav__ul__li"><a href="#gallery">Gallerie</a></li>
                 <li class="nav__ul__li"><a href="#contact">Contact</a></li>
-                <li class="nav__ul__li"><a>Liens</a></li>
+                <li class="nav__ul__li"><a href="https://linktr.ee/ledormeurduvol" target="_blank">Liens</a></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +50,7 @@
             </div>
         </article>
         <aside class="gallery-layout">
-            <h2 id="gallery">Mes créations</h2>
+            <h2 id="gallery" class="gallery-layout__title">Mes créations en vente</h2>
             <div class="filters">
                 <button id="btn-all" class="filter filter--active" name="filterAll" type="button">Tout</button>
                 <button id="btn-bracelets" class="filter" name="filterBracelets" type="button">Bracelets</button>
@@ -77,7 +80,7 @@
                 <div class="info-contact">
                     <h3 class="info-contact__title">Informations</h3>
                     <div class="info-contact__text">
-                        <p>Merci de me contacter directement via les liens ci-contre.</p>
+                        <p>Merci de me contacter directement par mail ou via l'un des liens ci-contre.</p>
                         <p>Vous pouvez me contacter pour toutes informations concernant mes créations ou pour acheter
                             l'une
                             de celles qui sont en vente dans la boutique.</p>
@@ -85,9 +88,13 @@
                     </div>
                 </div>
                 <div class="liens-contact">
+                    <h3>Coordonnées</h3>
+                    <ul class="liens-contact__ul">
+                        <li class="liens-contact__ul__li">Mail : terryomeher@gmail.com</li>
+                        <li class="liens-contact__ul__li">Téléphone : ?</li>
+                    </ul>
                     <h3>Liens de contact</h3>
                     <ul class="liens-contact__ul">
-                        <li class="liens-contact__ul__li">Par mail : terryomeher@gmail.com</li>
                         <li class="liens-contact__ul__li">
                             <a href="https://www.facebook.com/TerryOmeher/" target="_blank"><img
                                     src="./public/icon-facebook.png">Sur Facebook : Terry
@@ -98,14 +105,15 @@
                                     src="./public/icon-instagram.png">Sur Instagram : Le
                                 Dormeur du Vol</a>
                         </li>
-                        <li class="liens-contact__ul__li">Par téléphone : ?</li>
                     </ul>
                 </div>
             </div>
         </aside>
     </main>
     <footer class="footer">
-        <div></div>
+        <div class="footer__content"></div>
+        <a class="footer__link-icon-up" href="#up"><img class="footer__icon-up"
+                src="./public/icon-double-up-white.png">Retour au haut de page</a>
     </footer>
 </body>
 

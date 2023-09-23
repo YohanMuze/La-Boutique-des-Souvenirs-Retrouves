@@ -1,6 +1,23 @@
 .footer {
-    height: 20rem;
+    @include flex(row);
+    height: 100%;
     width: 100%;
     margin-top: 3rem;
+    padding: 2rem;
     background-color: black;
+    &__content {
+        @include flex(row);
+        width: 90%;
+    }
+    &__link-icon-up {
+        @include flex(column, center, normal);
+        height: 120px;
+        width: 100px;
+        color: white;
+        font-size: small;
+        text-align: center;
+    }
+    &__icon-up {
+        color: white;
+    }
 }
