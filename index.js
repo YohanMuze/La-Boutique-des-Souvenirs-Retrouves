@@ -232,11 +232,14 @@ function fillModal(article) {
                 <h3 class="modal-wrapper__info__details__title">Détails :</h3>    
                 <p class="modal-wrapper__info__details__p">${article[0].description}</p>
             </div>
+            <a class="modal-wrapper__info__btn-buy" href="#contact">Acheter</a>
         </div>
     </div>
     `;
     document.querySelector(".modal-wrapper__header__img")
     .addEventListener("click", (closeModal));
+    document.querySelector(".modal-wrapper__info__btn-buy")
+    .addEventListener("click",(closeModal));
 }
 
 displayGallery();
