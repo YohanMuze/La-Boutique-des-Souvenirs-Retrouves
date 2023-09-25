@@ -1,12 +1,28 @@
 .header {
-    margin: 2rem;
+    margin: 1.5rem;
     @include flex(row, space-between);
+    @include tablet {
+        flex-direction: column;
+        @include mobile {
+        flex-direction: column;
+        margin: 1rem;
+        }
+    }
     &__logo-link {
         display: block;
         height: 100%;
-        width: 35%;
+        width: 45%;
+        
+        @include tablet {
+            width: 70%;
+            margin-bottom: 1rem;
+            @include mobile {
+            width: 100%;
+            }
+        }
     }
     &__logo {
         width: 100%;
     }
+    
 }

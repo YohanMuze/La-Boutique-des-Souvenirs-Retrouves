@@ -1,11 +1,23 @@
 .welcome {
     position: absolute;
     top: 25%;
-    left: 10%;
     @include flex;
     margin: 5rem;
     color: white;
+    @include tablet {
+        top: 5%;
+        @include mobile {
+            margin: 1.5rem;
+        }
+    }
     &__txt {
         font-size: 3rem;
+        text-align: center;
+        @include tablet {
+            font-size: 1.8rem;
+            @include mobile {
+                font-size: 1rem;
+            }
+        }
     }
 }

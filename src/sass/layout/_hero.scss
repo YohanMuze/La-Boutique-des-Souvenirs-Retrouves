@@ -1,8 +1,13 @@
 .hero {
     position: relative;
-    margin: 3rem 0;
     &__figure {
         height: 40rem;
+        @include tablet {
+            height: 20rem;
+            @include mobile {
+                height: 10rem;
+            }
+        }
         &__img {
             height: 100%;
             width: 100%;

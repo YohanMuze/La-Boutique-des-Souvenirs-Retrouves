@@ -6,9 +6,17 @@
     margin-top: 3rem;
     padding: 3rem;
     background-color: black;
+    @include tablet {
+        @include flex(column, normal, center);
+    }
     &__content {
         @include flex(row, space-between, normal);
         width: 90%;
+        @include tablet {
+            @include flex(column, normal, center);
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
         & a, p {
             color: white;
         }

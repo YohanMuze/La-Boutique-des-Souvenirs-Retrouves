@@ -1,10 +1,21 @@
 .contact {
     @include flex;
     gap: 1rem;
+    
     &__title {
         font-size: larger;
+        @include mobile {
+            font-size: 1.2rem
+        }
     }
     &__content {
         @include flex(row, normal, normal);
+        @include tablet {
+        flex-direction: column;
+        align-items: center;
+        @include mobile {
+            width: 110%;
+        }
+    }
     }
 }

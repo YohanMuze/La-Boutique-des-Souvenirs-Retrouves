@@ -15,6 +15,7 @@ const buttonPorteParfum = document.querySelector("#btn-porte-parfum");
 const buttonTableaux = document.querySelector("#btn-tableaux");
 const buttonToteBags = document.querySelector("#btn-tote-bags");
 const filters = document.querySelectorAll(".filter");
+const body = document.body;
 
 const modal = document.querySelector("#modal-article");
 
@@ -67,7 +68,6 @@ function fillGallery(arr) {
     modalLink.forEach(a => {
         a.addEventListener("click", (e) => {
             openModal(e);
-            console.log(modal);
         })
     });
 }
@@ -203,13 +203,14 @@ function openModal(e) {
     modal.style.display = "flex";
     let target = e.target.id;
     let article = filterById(galleryActual, target);
-    console.log(article);
+    body.style.overflowY = "hidden";
     fillModal(article, target);
 }
 
 function closeModal() {
     modal.close();
     modal.style.display = "none";
+    body.style.overflowY = "auto"
 }
 
 function fillModal(article) {
@@ -224,15 +225,17 @@ function fillModal(article) {
         </figure>
         <div class="modal-wrapper__info">
             <h2 class="modal-wrapper__info__h">${article[0].title}</h2>
-            <div class="modal-wrapper__info__div-price">
-                <h3 class="modal-wrapper__info__div-price__title">Prix :</h3>
-                <p class="modal-wrapper__info__div-price__price">${article[0].price}</p>
+            <div class="modal-wrapper__info__responsive">
+                <div class="modal-wrapper__info__div-price">
+                    <h3 class="modal-wrapper__info__div-price__title">Prix :</h3>
+                    <p class="modal-wrapper__info__div-price__price">${article[0].price}</p>
+                </div>
+                <div class="modal-wrapper__info__details">
+                    <h3 class="modal-wrapper__info__details__title">Détails :</h3>    
+                    <p class="modal-wrapper__info__details__p">${article[0].description}</p>
+                </div>
             </div>
-            <div class="modal-wrapper__info__details">
-                <h3 class="modal-wrapper__info__details__title">Détails :</h3>    
-                <p class="modal-wrapper__info__details__p">${article[0].description}</p>
-            </div>
-            <a class="modal-wrapper__info__btn-buy" href="#contact">Acheter</a>
+                <a class="modal-wrapper__info__btn-buy" href="#contact">Acheter</a>
         </div>
     </div>
     `;

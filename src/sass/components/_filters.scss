@@ -3,6 +3,10 @@
     flex-wrap: wrap;
 	gap: 1rem;
 	margin: 2rem 0rem;
+	@include tablet {
+		gap: 0.5rem;
+		margin: 1rem 0;
+	}
 }
 
 .filter {
@@ -16,6 +20,12 @@
 	font-family: 'Work Sans' ;
 	font-size: 0.9rem;
 	font-weight: bold;
+	@include tablet {
+		@include mobile {
+			padding: 0.5rem 1rem;
+			font-size: 0.8rem;
+		}
+	}
 }
 
 .filter:hover {

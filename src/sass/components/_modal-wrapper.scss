@@ -3,6 +3,9 @@
     height: 100%;
     width: 100%;
     gap: 2rem;
+    @include tablet {
+        gap: 1.5rem;
+    }
     &__header {
         @include flex(row, end, center);
         width: 100%;
@@ -19,10 +22,19 @@
         width: 100%;
         max-height: 700px;
         gap: 12%;
+        @include tablet {
+            flex-direction: column;
+        }
     }
     &__fig {
         height: 100%;
         width: 50%;
+        @include tablet {
+            width: 80%;
+            @include mobile {
+                width: 100%;
+            }
+        }
         &__img {
         height: 100%;
         width: 100%;
@@ -37,19 +49,37 @@
         width: 30%;
         padding-top: 2rem;
         gap: 1.5rem;
+        @include tablet {
+            padding-top: 0;
+            width: 100%;
+            margin-top: -2rem;
+        }
         &__h {
             font-size: 2rem;
             margin-bottom: 1.4rem;
             align-self: center;
+            @include tablet {
+                margin-bottom: 0;
+                font-size: 1.8rem;
+                @include mobile {
+                    font-size: 1.5rem;
+                }
+            }
         }
         &__div-price {
             @include flex(row, space-between, center);
             &__title {
-                font-size: 1.5rem
+                font-size: 1.5rem;
+                @include tablet {
+                    font-size: 1.3rem;
+                }
             }
             &__price {
                 font-size : 1.5rem;
                 padding-top: 0.2rem;
+                @include tablet {
+                    font-size: 1.3rem
+                }
             }
         }
         &__details {
@@ -57,6 +87,9 @@
             gap: 1rem;
             &__title {
                 font-size: 1.5rem;
+                @include tablet {
+                    font-size: 1.3rem;
+                }
             }
             &__p {
                 font-size: 1rem;
@@ -68,6 +101,24 @@
             border: 1px solid black;
             text-align: center;
             border-radius: 1rem;
+            @include tablet {
+                width: 40%;
+                align-self: center;
+                margin-bottom: 1.6rem;
+                font-size: 1.2rem;
+                @include mobile {
+                    font-size: 1rem;
+                    padding: 0.4rem 0.8rem;
+                    width: 60%
+                }
+            }
         }
+        &__responsive {
+            @include flex(column, center, normal);
+            gap: 1rem;
+            @include tablet {
+                @include flex(column, normal, normal);
+            }
+        }  
     }
 }

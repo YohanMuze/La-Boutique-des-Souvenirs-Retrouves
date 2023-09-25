@@ -5,8 +5,20 @@
     padding: 2rem 2rem 4rem;
     background-color: #d6ae86;
     border-radius: 1rem;
+    @include shadow-light;
+    @include tablet {
+        @include mobile {
+            margin: 1.5rem 0.5rem;
+        }
+    }
     &__title {
         margin-top: 1rem;
         font-size: 2rem;
+        @include tablet {
+            @include mobile {
+                margin-top: 0;
+                font-size: 1.3rem;
+            }
+        }
     }
 }

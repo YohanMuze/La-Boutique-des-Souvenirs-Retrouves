@@ -3,10 +3,22 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 1.5rem;
     grid-row-gap: 70px;
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+    }
     & a {
         @include flex(column, normal, normal);
         border-radius: 1rem;
         background-color: #FAFAFA;
+        @include shadow-light;
+        @include tablet {
+            @include mobile {
+                max-width: 400px;
+            }
+        }
     }
     & img {
         height: 380px;
@@ -16,5 +28,8 @@
     & figcaption {
         padding: 0.5rem;
         align-self: center;
+        @include mobile {
+            font-size: 1.1rem;
+        }
     }
 }
